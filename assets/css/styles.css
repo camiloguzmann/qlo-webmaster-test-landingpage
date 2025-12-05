@@ -30,14 +30,28 @@ body {
     padding: 1rem 0;
 }
 
+
 .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    text-decoration: none;
+}
+
+.logo span {
     font-size: 1.6rem;
     font-weight: 700;
     color: #ffffff;
 }
 
-.logo span {
-    color: var(--color-accent);
+.logo .accent {
+    color: #1abc9c;
+}
+
+.logo-img {
+    height: 40px;
+    width: auto;
+    display: block;
 }
 
 /* HERO */
