@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="64" height="64" role="img" aria-label="Fast intake icon">
+  <rect width="48" height="48" rx="8" fill="#eaf2ff" />
+  <path d="M10 26c3-6 11-12 22-12" fill="none" stroke="#0b3d91" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+  <circle cx="36" cy="14" r="4" fill="#e53e3e" />
+</svg>
