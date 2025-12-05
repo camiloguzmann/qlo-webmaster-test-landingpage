@@ -17,14 +17,13 @@
         </div>
     </header>
 
-    <!-- HERO -->
-    <section class="hero">
+    <section class="hero" role="banner" id="hero">
         <div class="hero-overlay"></div>
-        <img class="hero-bg" src="assets/images/hero.jpg" alt="Immigration legal support">
+        <img class="hero-bg" src="assets/images/emergency-immigration-assistance.png" alt="Immigration legal support"
+            loading="lazy">
         <div class="container hero-content">
-            <h2>Emergency Immigration Legal Assistance</h2>
+            <h1>Emergency Immigration Legal Assistance</h1>
             <p>Fast, confidential, and expert guidance for urgent immigration situations.</p>
-
             <a class="btn-primary" href="#contact">Request Help Now</a>
         </div>
     </section>
@@ -73,17 +72,16 @@
     <section id="contact" class="contact container">
         <h2 class="section-title">Request Emergency Assistance</h2>
         <form class="contact-form">
-            <input type="text" placeholder="Full Name" required>
-            <input type="email" placeholder="Email Address" required>
+            <input type="text" placeholder="Full Name" aria-label="Full Name" required>
+            <input type="email" placeholder="Email Address" aria-label="Email Address" required>
             <input type="tel" placeholder="Phone Number" required>
             <textarea placeholder="Describe your situation" required></textarea>
-
             <button type="submit" class="btn-primary">Submit Request</button>
         </form>
     </section>
 
     <!-- FAQ -->
-    <section class="faq container">
+    <section id="faq" class="faq container">
         <h2 class="section-title">Frequently Asked Questions</h2>
 
         <div class="faq-grid">
