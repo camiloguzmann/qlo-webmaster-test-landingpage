@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="64" height="64" role="img" aria-label="Bilingual icon">
-  <rect width="48" height="48" rx="8" fill="#fffaf0" />
-  <path d="M12 34c4-6 20-6 24 0" stroke="#0b3d91" stroke-width="3" stroke-linecap="round" fill="none" />
-  <circle cx="18" cy="18" r="2" fill="#e53e3e" />
-  <circle cx="30" cy="18" r="2" fill="#0b3d91" />
-</svg>
