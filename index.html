@@ -7,6 +7,10 @@
     <title>Emergency Immigration Assistance</title>
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="icon" type="image/png" href="assets/icons/favicon.ico">
+    <!-- SweetAlert2 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
+    <!-- SweetAlert2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- Meta Description -->
     <meta name="description"
         content="Emergency immigration legal assistance with fast, reliable and confidential guidance.">
@@ -27,8 +31,8 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="#">
     <meta property="og:locale" content="en_US">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <script src="assets/js/analytics.js"></script>
-    <script src="assets/js/script.js"></script>
     <script type="application/ld+json">
         {
         "@context": "https://schema.org",
@@ -85,29 +89,64 @@
     </section>
 
     <!-- FEATURES -->
-    <section class="features container">
+    <section class="features container" id="features">
         <h2 class="section-title">How We Help</h2>
 
         <div class="features-grid">
             <div class="feature-card">
+                <svg class="feature-icon" width="56" height="56" viewBox="0 0 24 24" aria-hidden="true"
+                    focusable="false" role="img">
+                    <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.5" />
+                    <path d="M12 7v6l4 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" fill="none" />
+                    <path d="M9 4v2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                </svg>
                 <h3>Rapid Case Review</h3>
                 <p>We analyze your situation immediately to provide the fastest possible legal support.</p>
             </div>
 
             <div class="feature-card">
+                <svg class="feature-icon" width="56" height="56" viewBox="0 0 24 24" aria-hidden="true"
+                    focusable="false" role="img">
+                    <path
+                        d="M21 11.5c0 1.7-.9 3.2-2.3 4l-6.7 3.5c-.5.3-1.1.3-1.6 0l-3.5-1.8c-.6-.3-.9-1-.7-1.6l.9-3.2 8.9-8.9c1.6 1.5 2.9 3.3 3.9 5.4"
+                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                        fill="none" />
+                    <path d="M6 18l3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                </svg>
                 <h3>Expert Attorneys</h3>
                 <p>Certified immigration lawyers ready to guide you through urgent processes.</p>
             </div>
 
             <div class="feature-card">
+                <svg class="feature-icon" width="56" height="56" viewBox="0 0 24 24" aria-hidden="true"
+                    focusable="false" role="img">
+                    <rect x="3" y="4" width="14" height="16" rx="2" stroke="currentColor" stroke-width="1.5"
+                        fill="none" />
+                    <path d="M7 8h6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                    <path d="M7 12h6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                </svg>
                 <h3>Document Preparation</h3>
                 <p>We help you gather, prepare, and submit everything required for your case.</p>
+            </div>
+
+            <div class="feature-card">
+                <svg class="feature-icon" width="56" height="56" viewBox="0 0 24 24" aria-hidden="true"
+                    focusable="false" role="img">
+                    <path d="M12 2l6 3v5c0 5-3 9-6 11-3-2-6-6-6-11V5l6-3z" stroke="currentColor" stroke-width="1.5"
+                        stroke-linejoin="round" fill="none" />
+                    <path d="M9.5 11.5l1.8 1.8 3.2-3.2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" fill="none" />
+                </svg>
+                <h3>Emergency Support</h3>
+                <p>24/7 assistance for urgent legal issues to keep your case on track.</p>
             </div>
         </div>
     </section>
 
+
     <!-- SOCIAL PROOF -->
-    <section class="testimonials">
+    <section id="testimonials" class="testimonials">
         <div class="container">
             <h2 class="section-title section-title-white">Trusted by Immigrant Families</h2>
 
@@ -191,7 +230,7 @@
 
             <div class="badges-grid">
                 <div class="badge-item">
-                    <div class="badge-icon">⭐</div>
+                    <div class="badge-icon"><i class="fa-solid fa-star"></i></div>
                     <div class="badge-content">
                         <h3>4.8/5</h3>
                         <p>Google Reviews</p>
@@ -199,7 +238,7 @@
                 </div>
 
                 <div class="badge-item">
-                    <div class="badge-icon">★</div>
+                    <div class="badge-icon"><i class="fa-solid fa-medal"></i></div>
                     <div class="badge-content">
                         <h3>10.0</h3>
                         <p>Avvo Rating</p>
@@ -207,7 +246,7 @@
                 </div>
 
                 <div class="badge-item">
-                    <div class="badge-icon">A+</div>
+                    <div class="badge-icon"><i class="fa-solid fa-shield-alt"></i></div>
                     <div class="badge-content">
                         <h3>BBB</h3>
                         <p>Accredited</p>
@@ -215,7 +254,7 @@
                 </div>
 
                 <div class="badge-item">
-                    <div class="badge-icon">📺</div>
+                    <div class="badge-icon"><i class="fa-solid fa-tv"></i></div>
                     <div class="badge-content">
                         <h3>CNN</h3>
                         <p>Featured</p>
@@ -223,27 +262,21 @@
                 </div>
             </div>
 
-            <div class="media-logos">
-                <span>As Seen In:</span>
-                <div class="logos-grid">
-                    <div class="media-logo">CNN</div>
-                    <div class="media-logo">NY Times</div>
-                    <div class="media-logo">BBC News</div>
-                    <div class="media-logo">NPR</div>
-                </div>
-            </div>
         </div>
     </section>
 
     <!-- CONTACT -->
     <section id="contact" class="contact container">
         <h2 class="section-title">Request Emergency Assistance</h2>
+        <p class="contact-subtitle">Fill out the form below and our legal team will reach you immediately.</p>
         <form class="contact-form" aria-label="Emergency assistance request form">
-            <input type="text" placeholder="Full Name" aria-label="Full Name" required>
-            <input type="email" placeholder="Email Address" aria-label="Email Address" required>
-            <input type="tel" placeholder="Phone Number" required>
-            <textarea placeholder="Describe your situation" required></textarea>
-            <button type="submit" class="btn-primary">Submit Request</button>
+            <input type="text" name="full_name" placeholder="Full Name" aria-label="Full Name" required>
+            <input type="email" name="email" placeholder="Email Address" aria-label="Email Address" required>
+            <input type="tel" name="phone" placeholder="Phone Number" aria-label="Phone Number" required>
+            <textarea name="situation" placeholder="Describe your situation" required></textarea>
+            <div class="form-actions">
+                <button type="submit" class="contact-btn">Submit Request</button>
+            </div>
         </form>
     </section>
 
@@ -276,5 +309,5 @@
     </footer>
 
 </body>
-
+    <script src="assets/js/script.js"></script>
 </html>
